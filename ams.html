@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>AMS19</title>
+    <link  href="ams2.jpg" rel="icon">
+
+    <style>
+        #top{
+            background-image:url('back1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        #dp{
+            height: 1%;
+            width: 50%;
+            border-radius: 50%;
+            padding:2%;
+         }
+         .ico{
+            font-size:30px;
+            color:white
+         }
+         .ico:hover{
+            font-size:30px;
+            color:rgb(184, 197, 235)
+         }
+
+         #dppara{
+           text-align:center;
+           padding:2%;
+         }
+
+         .mynav{
+             margin-bottom:80px;
+         }
+        #userstatus{
+            color:white;
+            text-align: center;
+            font-size: x-large;
+            font-family: cursive;
+            font-weight: 900;
+        }
+        #username{
+            color:white;
+            text-align: left;
+            font-size: x-large;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:bold;
+            text-transform: uppercase;
+        }
+        #userinfo{
+            color:white;
+            text-align: left;
+            font-size: x-large;
+            font-weight: 500;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #content{
+            padding:1%;
+        }
+        .contentheadings{
+            font-weight: bolder;
+            padding-left:2%;
+            padding-right:2%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .headingscontent{
+            font-size: larger;
+            padding-left:2%;
+            padding-right:2%;
+            font-weight: 400;
+            text-align: justify ;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #down{
+            background-color: rgb(245, 245, 245);
+        }
+        .explogo{
+            
+            height:36px;
+            width:36px;
+            border-radius: 50%;
+        }
+        .skills{
+            font-size:medium;
+            font-style:italic;
+            border: 1px solid #d4d4d4;
+            padding: 4px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+        .skills:hover{
+            font-size:medium;
+            font-style:italic;
+            border: 1px solid #404140;
+            background-color: #404140;
+            padding: 4px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color:white
+        }
+        .company{
+            font-size: larger;
+            font-style: italic;
+            border: 1px solid #d4d4d4;
+            padding: 6px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+        .comtext{
+            color:black;
+        }
+        .comtext:hover{
+            color:white;
+        }
+        .company:hover{
+            font-size: larger;
+            font-style: italic;
+            border: 1px solid #404140;
+            background-color: #404140;
+            padding: 4px 10px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            color:white
+            
+        }
+        html, body {
+            scroll-behavior: smooth;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+    </style>
+    <script>
+        $(document).on('click','.navbar-collapse.in',function(e) {
+        if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+        }
+        });
+
+
+        // $(".headingscontent").mouseover(
+        // function () {
+        //     $(this).addClass(" animate__animated animate__zoomIn");
+        // },
+        // function () {
+        //     $(this).removeClass(" animate__animated animate__zoomIn");
+
+        // }
+        // );
+
+        document.documentElement.style.setProperty('--animate-duration', '3s');
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid" id="top">
+        <div class="mynav">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="#pp">Anmol Manik Singh</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#training">Training Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#competitive">Competitive Programming</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div id="pp"></div>
+            <div class="col-sm-6">
+                <div id="dppara">
+                    <img  class="animate__animated animate__rollIn" src="ams.jpg" id="dp"><br>
+                    <p id="userstatus">while(!successachieved())<br>{<br>
+                    workhard();<br>}<br></p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <p id="username">Anmol Manik Singh&nbsp;
+                    <span><a class="ico" href="https://github.com/ams19"><i class="fa fa-github"></i></a></span>&nbsp;
+                    <span><a class="ico" href="https://www.linkedin.com/in/anmol-manik-singh-063ab214a/"><i class="	fa fa-linkedin-square"></i></a></span>&nbsp;
+                    <span><a class="ico" href="mailto:anmolmaniksingh@gmail.com" ><i class="fa fa-google-plus"></i></a></span>&nbsp;
+                    <!-- <span><a href="https://www.instagram.com/anmolmaniksingh/?hl=en"  style="font-size:30px;color:white"><i class="fa fa-instagram"></i></a></span> -->
+                </p>
+                <hr style="border-width:5px;">
+                <p id="userinfo">
+                Developer,&nbsp;Competitve Programmer<br>
+                <div id="about"></div>
+                  <br><br>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-fluid" id="down">
+        <div class="row" id="content">
+            <div class="contentheadings">
+                <h2>About Me</h2>
+            </div>
+            <hr style="border-color: black; width:60%;border-width:2px;margin-left:2%;padding-left:4%">
+            
+            <p class="headingscontent">Final year undergraduate (ECE) from Dr BR Ambedkar National Institute Of 
+                Technology, Jalandhar. I'm passionate about Competitive Programming and love to write 
+                and debug codes all the time.</p><div id="education"></div>
+                <p class="headingscontent">My areas of interest are Data structure and Design and 
+                Analysis of Algorithm. You can also find me giving contests on Codechef, Hackerearth 
+                etc.</p><br>
+                
+
+                <div class="contentheadings">
+                    <h2>Education</h2>
+                </div>
+                <hr style="border-color: black; width:60%;border-width:2px;margin-left:2%;padding-left:4%">
+                <p class="headingscontent">
+                    <span   class="company">
+                    <img src="nitj.jpeg" class="explogo"><a class="comtext"
+                     href="https://www.nitj.ac.in/"> 
+                     NIT Jalandhar</a>
+                    </span>
+                </p>
+    
+                <div class="headingscontent">
+                <span style="font-size: x-large;font-style:italic">
+                    B.Tech Electronics And Communications Engineering<br></span>
+                <span style="font-weight: bold;">CGPA : 8.72(Till 7th semester )<br>Graduating: 2020.</span>
+                </div><br>
+    
+                <p class="headingscontent">
+                    <span class="company">
+                    <img src="cbse.jpeg" class="explogo"><a  class="comtext"
+                     href="http://cbse.nic.in/newsite/index.html"> 
+                     Kendriya Vidyalaya (CBSE Board)</a>
+                    </span>
+                </p>
+    
+                <div class="headingscontent">
+                    <span style="font-size: x-large;font-style:italic">
+                        Senior School (12th )<br></span>
+                    <span style="font-weight: bold;">Percentage: 92.4%<br>
+                        Year of passing: 2016</span>
+                    </div><br>
+        
+                    <p class="headingscontent">
+                        <span  class="company">
+                        <img src="cbse.jpeg" class="explogo"><a  class="comtext"
+                         href="http://cbse.nic.in/newsite/index.html"> 
+                         Kendriya Vidyalaya (CBSE Board)</a>
+                        </span>
+                    </p>
+        
+                    <div class="headingscontent">
+                        <span style="font-size: x-large;font-style:italic">
+                            Secondary Education (10th )<br></span>
+                        <span style="font-weight: bold;">CGPA: 10<br><div id="training"></div>
+                            Year of passing: 2014</span>
+                            
+                        </div><br>
+
+                        
+            <div class="contentheadings">
+                <h2>Training Experience</h2>
+            </div>
+            <hr style="border-color: black; width:60%;border-width:2px;margin-left:2%;padding-left:4%">
+            <p class="headingscontent">
+                <span class="company" >
+                <img src="rcf.jpeg" class="explogo"><a  class="comtext"
+                 href="https://rcf.indianrailways.gov.in/"> 
+                    Rail Coach Factory</a>
+                </span>
+            </p>
+
+            <div class="headingscontent">
+            <span style="font-size: x-large;font-style:italic">Technical Trainee<br></span>
+            Worked on a project to develop IOT based system to keep a
+            check on temperature.Created a SMS and EMAIL alert system.
+            <p style="font-weight: bold;margin-top:7px">OVERVIEW: </p>
+            <ul >
+                <li>Temperature Alert System.</li>
+                <li>Developed using Bold IOT and LM35 sensor.</li>
+                <li>Whenever temperature is not in the acceptable range alerts are send to the concerned authority.</li>
+            </ul>
+            <p style="font-weight: bold;">USECASES: </p>
+            <ol>
+                <li>To monitor working of air conditioners in the rail coaches.</li>
+                <li>To monitor working of refrigerators in the pantry car.</li>
+            </ol>
+            </ul>
+            <span style="font-weight: bold;">DURATION: May 2019 to July 2019</span>
+            </div><br>
+
+            <p class="headingscontent">
+                <span class="company">
+                <img src="itronix.jpeg" class="explogo"><a  class="comtext" href="https://itronixsolution.com/">
+                     Itronix Solutions</a>
+                </span>
+            </p>
+
+            <div class="headingscontent">
+            <span style="font-size: x-large;font-style:italic">Big Data Analysis<br></span>
+            Pursued 6 weeks training in Big Data & Hadoop Administration
+            under guidance of Er.Karan Arora. Main Topics covered were
+            Hadoop, Hive, Python(for plotting graphs, charts), Pig, MySql,
+            basic Linux commands.
+            <p style="font-weight: bold;margin-top:7px">OVERVIEW: </p>
+            <ul >
+                <li>Tree Census Data Analysis.</li>
+                <li>Developed using Hadoop, Apache Hive, Python, etc.</li>
+                <li>Various queries were made to retrieve useful information from New York Tree Census Data (2015-2016).</li>
+            </ul>
+            <p style="font-weight: bold;">USECASES: </p>
+            <ol>
+                <li>To monitor the conditions of various trees grown by the municipal corporation.</li>
+                <li>Helpful in making policies and plans to prevent Tree Degradation.</li>
+            </ol>
+            </ul>
+            <div id="skills"></div>
+            <span style="font-weight: bold;">Duration: June 2018 to July 2018</span>
+            </div><br>
+
+
+            <div class="contentheadings">
+                <h2>Skills</h2>
+            </div>
+            <hr style="border-color: black; width:60%;border-width:2px;margin-left:2%;padding-left:4%">
+            
+            <p class="headingscontent">
+                <span  style="font-size: larger;font-style: italic;">
+                Web Development:
+                <span class="skills">HTML</span>
+                <span class="skills">CSS</span>
+                <span class="skills">NodeJs</span>
+                <span class="skills">JavaScript</span>
+                <span class="skills">JQuery</span>
+                </span>
+            </p><br>
+
+            <p class="headingscontent">
+                <span  style="font-size: larger;font-style: italic;">
+                Programming Languages:
+                <span class="skills">C++</span>
+                <span class="skills">Python</span>
+                <span class="skills">Java</span>
+                </span>
+            </p><br>
+
+            <p class="headingscontent">
+                <span  style="font-size: larger;font-style: italic;">
+                Programming Environments:
+                <span class="skills">CodeBlocks</span>
+                <span class="skills">Eclipse</span>
+                <span class="skills">Visual Studio Code</span>
+                </span>
+            </p><br>
+            <div id="projects"></div>
+            <p class="headingscontent">
+                <span  style="font-size: larger;font-style: italic;">
+                Databases:
+                <span class="skills">MySQL</span>
+                <span class="skills">MongoDb</span>
+                </span>
+            </p><br>
+
+
+            <div class="contentheadings">
+                <h2>Projects</h2>
+            </div>
+            <hr style="border-color: black; width:60%;border-width:2px;margin-left:2%;padding-left:4%">
+            <p class="headingscontent">
+                <span  style="font-size: x-large;font-style: italic;">
+                PASSWORD MANAGEMENT SYSTEM
+            </span>
+            </p>
+            <p class="headingscontent">
+                <span  style="font-size: large;font-style: italic;"><a class="skills" href="http://ams19-pms.glitch.me/">
+                http://ams19-pms.glitch.me/</a>
+            </span>
+            </p>
+
+            <div class="headingscontent">
+            <p>Password Management System is a website developed for managing passwords of a user. 
+                A user can first create an account from register section and then after signing in to 
+                the website the user can add various password categories like gmail, facebook, twitter 
+                or any project name.So that in future whenever the user needs to log in to a system 
+                he/she can directly copy paste the password details and there is no risk of forgetting 
+                signing in details.</p>
+            <p style="font-weight: bold;margin-top:7px">KEY FEATURES: </p>
+            <ul >
+                <li>Add as many password details and password categories as you want.</li>
+                <li>Details can be updated later if required.</li>
+                <li style="font-weight: bold;">Developed using Nodejs, HTML, CSS, Bootstrap, Mongodb etc.</li>
+            </ul>
+            </div>
+            <br>
+            <p class="headingscontent">
+                <span  style="font-size: x-large;font-style: italic;">
+                LIBRARY MANAGEMENT SYSTEM
+            </span>
+            </p>
+            <p class="headingscontent">
+                <span  style="font-size: large;font-style: italic;"><a class="skills" href="https://github.com/ams19/librarymanager">
+                https://github.com/ams19/librarymanager</a>
+            </span>
+            </p>
+            <div class="headingscontent">
+                <p>Library Management System is library managing app that is developed for simplifying the various
+                 steps involved in issuing or returning a book in a college library. Students and Librarians can 
+                 sign in or sign up to the app. Librarians can issue books to students using this app.
+                  Email alerts will be send to the students on the last due date of return and after 
+                  which fine will be charged at 5Rs/day for late return. Various other functionalities like adding a
+                   book into the database, removing a book from database etc are added to the app.</p> 
+            <p style="font-weight: bold;margin-top:7px">KEY FEATURES: </p>
+            <ul >
+                <li>Books can be searched based upon book title, author's name ,publisher's name, department name.</li>
+                <li>Exact location of a book will be provided to the student which will ease the process of issuing a book.</li>
+                <li>Email alerts will be send to the students on the last due date of return.</li>
+                <li>Accurate fine calculation for late return.</li>
+                <li style="font-weight: bold;">Developed using Java, Javafx, SceneBuilder, MySQL etc.</li>
+            </ul>
+            </div>
+            <br>
+
+            <p class="headingscontent">
+                <span  style="font-size: x-large;font-style: italic;">
+                SMART STREET LIGHTING
+            </span>
+            </p>
+            <p class="headingscontent">
+                <span  style="font-size: large;font-style: italic;"><a class="skills" href="https://www.tinkercad.com/things/d7WfioKaeon-copy-of-project-street-lights/editel">
+                    https://www.tinkercad.com/things/d7WfioKaeon-copy-of-project-street-lights/editel</a>
+            </span>
+            </p>
+            <div class="headingscontent">
+                <p>Smart street lighting refers to public street lighting that adapts to movement by
+                    pedestrians, cyclists and cars. Intelligent street lighting, also referred to as
+                    adaptive street lighting, dims when no activity is detected, but brightens when
+                    movement is detected. This type of lighting is different from traditional, stationary illumination, or
+                    dimmable street lighting that dims at pre-determined times because of its
+                    dynamic movement dependent behavior. This was my final year project work.</p> 
+            <p style="font-weight: bold;margin-top:7px">KEY FEATURES: </p>
+            <ul >
+                <li>Huge Energy savings up to 30-40%.</li>
+                <li>Excellent central operations and maintenance of street lights.</li>
+                <li>Real time fault detection and Smart communication.</li>
+                <li>Reduced Carbon Emission.</li>
+                <li style="font-weight: bold;">Developed using Tinkercard (Simulation platform), Python, Thingspeak (Cloud Service), etc.</li>
+            </ul>
+            </div>
+            <br>
+
+            <div class="contentheadings">
+                <div id="competitive"></div>
+                <h2>Competitive Programming</h2>
+            </div>
+            <hr style="border-color: black; width:80%;border-width:2px;margin-left:2%;padding-left:4%">
+            
+            <div class="col-sm-4">
+            <p class="headingscontent">
+                <span  style="font-size: x-large;font-style: italic;">
+                <img src="codechef.png" class="explogo"><a style="color: black;;"
+                 href="https://www.codechef.com/users/ams19"> 
+                     CodeChef</a>
+                </span>
+            </p>
+            <div class="headingscontent">
+            <span style="font-size:larger;font-style:italic;margin-left:2%;"><a class="skills"
+                href="https://www.codechef.com/users/ams19"> 
+                https://www.codechef.com/users/ams19</a><br></span>
+
+            <p style="font-weight: bold;margin-top:7px;margin-left:4%;">Rating : 1679</p>
+            </div><br>
+            </div>
+            
+            <div class="col-sm-4">
+                <p class="headingscontent">
+                    <span  style="font-size: x-large;font-style: italic;">
+                    <img src="hackeearth.png" class="explogo"><a style="color: black;;"
+                     href="https://www.hackerearth.com/@anmolmaniksingh"> 
+                         HackerEarth</a>
+                    </span>
+                </p>
+                <div class="headingscontent">
+                <span style="font-size:larger;font-style:italic;margin-left:2%;"><a class="skills"
+                    href="https://www.hackerearth.com/@anmolmaniksingh"> 
+                    https://www.hackerearth.com/@anmolmaniksingh</a><br></span>
+    
+                <p style="font-weight: bold;margin-top:7px;margin-left:4%;">Rating : 1212</p>
+                </div><br>
+            </div>
+
+            <div class="col-sm-4">
+                <p class="headingscontent">
+                    <span  style="font-size: x-large;font-style: italic;">
+                    <img src="gfg.png" class="explogo"><a style="color: black;;"
+                     href="https://auth.geeksforgeeks.org/user/AnmolManikSingh/practice/"> 
+                         GeeksForGeeks</a>
+                    </span>
+                </p>
+                <div class="headingscontent">
+                <span style="font-size:larger;font-style:italic;margin-left:2%;"><a class="skills"
+                    href="https://practice.geeksforgeeks.org/batch/sp-2019"> 
+                    Rank in contest leaderboard: 11</a><br></span>
+    
+                <p style="font-weight: bold;margin-top:7px;margin-left:4%;">Overall Coding Score: 586</p>
+                </div><br>
+            </div><br>
+
+
+            <div class="copyright" style="text-align: center;">
+                &copy; Copyright: <strong><span><a href="https://www.instagram.com/anmolmaniksingh/?hl=en">Anmol Manik Singh- 2020</a></span></strong>
+              </div>
+
+        </div>
+    </div>
+ 
+</body>
+</html>
